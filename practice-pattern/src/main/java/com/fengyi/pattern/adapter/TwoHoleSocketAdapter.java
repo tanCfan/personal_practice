@@ -5,9 +5,9 @@ package com.fengyi.pattern.adapter;
  * @version 创建时间：2022/3/16 16:02
  * @description: 双孔插座
  */
-public class TwoHoleSocketThreeHolePlugsAdapter extends ThreeHolePlugs implements TwoHoleSocket  {
+public class TwoHoleSocketAdapter extends ThreeHolePlugs implements TwoHoleSocket  {
 
-    public TwoHoleSocketThreeHolePlugsAdapter (String power) {
+    public TwoHoleSocketAdapter(String power) {
         super(power);
     }
 

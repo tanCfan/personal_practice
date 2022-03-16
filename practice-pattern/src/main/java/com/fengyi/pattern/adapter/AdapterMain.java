@@ -9,7 +9,7 @@ public class AdapterMain {
 
     public static void main(String[] args) {
         System.out.println("=============== 适配器模式 begin ===============");
-        TwoHoleSocket twoHoleSocket = new TwoHoleSocketThreeHolePlugsAdapter("双孔插座接入三孔插头，接通220V电流");
+        TwoHoleSocket twoHoleSocket = new TwoHoleSocketAdapter("双孔插座接入三孔插头，接通220V电流");
         twoHoleSocket.accessToTwoHolePlug();
         System.out.println("=============== 适配器模式 end ===============");
     }
