@@ -16,9 +16,4 @@ public class SmartFridge extends Fridge {
     public void close() {
         System.out.println("智能冰箱关闭冰箱门：通过语音关闭");
     }
-
-    @Override
-    public void putIn() {
-        System.out.println("智能冰箱放入物品：亲自用手放入物品");
-    }
 }

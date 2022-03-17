@@ -20,7 +20,9 @@ public abstract class Fridge {
     /**
      * 放入物品
      */
-    public abstract void putIn();
+    public void putIn() {
+        System.out.println("亲自用手放入物品");
+    }
 
     /**
      * 冰箱存储物品
