@@ -27,7 +27,7 @@ public abstract class Fridge {
     /**
      * 冰箱存储物品
      */
-    public void storage () {
+    public final void storage () {
         // 打开冰箱门
         open();
 
