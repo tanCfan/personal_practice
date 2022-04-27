@@ -12,6 +12,7 @@
 
 	<modules>
 		<module>practice-pattern</module>
+		<module>practice-algorithm</module>
 	</modules>
 
 	<properties>
