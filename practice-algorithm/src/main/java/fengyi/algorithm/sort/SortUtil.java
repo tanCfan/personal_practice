@@ -53,6 +53,7 @@ public class SortUtil {
      * 1. 获取待排序数组基准数，基准数左侧元素均小于基准数，基准数右侧元素均大于基准数
      * 2. 将基准数左侧区间及基准数右侧区间作为新的待排序数组，执行第一步操作
      * 3. 递归以上两个步骤
+     *
      * @param array 待排序数组
      * @param begin 起始位置
      * @param end 结束位置
@@ -76,7 +77,7 @@ public class SortUtil {
 
         while (left != right) {
 
-            // 一直往左查找，直到获取到小于等于基准数的元素
+            // 一直往左查找，直到获取到小于等于基准数的元素 (因为基准数是从左边选取， 所以必须先从右边开始查找，找到小于基准数的元素)
             while (array[right] >= basic && right > left) {
                 right--;
             }
