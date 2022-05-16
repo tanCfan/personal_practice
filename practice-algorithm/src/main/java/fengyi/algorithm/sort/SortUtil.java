@@ -103,4 +103,34 @@ public class SortUtil {
         quickSortAsc(array, begin, left-1);
         quickSortAsc(array, left+1, end);
     }
+
+
+    /**
+     * 插入排序
+     *  1. 选取待插入元素
+     *  2. 获取有序元素区间
+     *  3. 将待插入元素与有序区间中的元素逐一比较，确定插入位置。
+     *  4. 将元素插入有序区间内
+     * @param arr 待排序数组
+     */
+    public static void insertSortAsc(int[] arr) {
+        if (arr == null || arr.length <= 1) {
+            return;
+        }
+
+        int j;
+
+        for (int i = 1; i <= arr.length -1 ; i++) {
+            // 从第二个元素开始， 左侧均为有序区间
+            int tem = arr[i];
+
+            // 比待插入元素大的元素都往后挪一个位置
+            for (j = i - 1; j >= 0 && arr[j] > tem; j--) {
+                arr[j + 1] = arr[j];
+            }
+
+            // 插入元素
+            arr[j+1] = tem;
+        }
+    }
 }
