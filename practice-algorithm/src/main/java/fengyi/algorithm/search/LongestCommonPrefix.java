@@ -24,14 +24,13 @@ public class LongestCommonPrefix {
             return inputStrArr[0];
         }
 
-        // 使用第一个字符串比较
+        // 获取取数组中第一个字符串作为初始最大公共前缀
         String result = inputStrArr[0];
 
-        // 循环比较
         for (int index = 1; index < inputStrArr.length; index++) {
-            // 不断截取
+            // 获取 最大公共前缀 与 后续字符串 的最大公共前缀
             while (inputStrArr[index].indexOf(result) != 0) {
-                // 第一个字符串缩短一位
+                // 最大公共前缀短一位
                 result = result.substring(0, result.length() - 1);
             }
 
