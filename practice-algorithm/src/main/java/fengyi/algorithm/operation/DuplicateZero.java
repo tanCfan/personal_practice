@@ -8,6 +8,7 @@ package fengyi.algorithm.operation;
 public class DuplicateZero {
 
     /**
+     * leetcode-1089. 复写零
      * 对输入的数组进行零复写操作（某个位置上若出现了0，则复写该元素，其余元素往后挪，数组长度不变）
      * 输入：[1,0,2,3,0,4,5,0]
      * 输出：[1,0,0,2,3,0,0,4]
