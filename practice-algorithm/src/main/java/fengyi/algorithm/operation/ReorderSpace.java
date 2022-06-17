@@ -11,6 +11,7 @@ import java.util.List;
 public class ReorderSpace {
 
     /**
+     * leetcode-1592. 重新排列单词间的空格
      * 输入一个字符串 text
      * 该字符串由若干被空格包围的单词组成
      * 每个单词由一个或者多个小写英文字母组成

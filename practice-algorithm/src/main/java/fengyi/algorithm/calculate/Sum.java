@@ -8,6 +8,7 @@ package fengyi.algorithm.calculate;
 public class Sum {
 
     /**
+     * leetcode-1. 两数之和
      * 在输入的数组中获取两个元素，这两个元素的和等于输入target
      * @param nums 输入数组
      * @param target 目标和

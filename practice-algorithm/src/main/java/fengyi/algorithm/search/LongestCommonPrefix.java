@@ -9,6 +9,7 @@ public class LongestCommonPrefix {
 
 
     /**
+     * leetcode-14. 最长公共前缀
      * 1. 获取取数组中第一个字符串作为初始最大公共前缀
      * 2. 获取 最大公共前缀 与 后续字符串 的最大公共前缀
      * 3. 重复第2步操作
