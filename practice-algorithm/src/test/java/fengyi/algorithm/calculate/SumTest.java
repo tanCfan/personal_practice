@@ -24,7 +24,7 @@ public class SumTest {
         int[] result = Sum.twoSum(inputArr, target);
 
         Assert.assertNotNull(result);
-        Assert.assertEquals(result.length, expectResult.length);
+        Assert.assertEquals(expectResult.length, result.length);
         for (int i = 0; i < expectResult.length; i++) {
             Assert.assertEquals(expectResult[i], result[i]);
         }
