@@ -10,17 +10,23 @@ public class ListNode {
     /**
      * 值
      */
-     int val;
+    int val;
 
     /**
      * 下一个节点
      */
     ListNode next;
 
-     ListNode() {}
+    ListNode() {
+    }
 
-     ListNode(int val) { this.val = val; }
+    ListNode(int val) {
+        this.val = val;
+    }
 
-     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
 
 }

@@ -29,4 +29,38 @@ public class SumTest {
             Assert.assertEquals(expectResult[i], result[i]);
         }
     }
+
+    @Test
+    public void testAddTwoNumbers() {
+        ListNode inputAddNumRoot1 = new ListNode();
+        ListNode cursorNode1 = inputAddNumRoot1;
+        int[] inputAddNumArr1 = new int[] {2,4,3};
+        for (int j : inputAddNumArr1) {
+            cursorNode1.next = new ListNode(j);
+            cursorNode1 = cursorNode1.next;
+        }
+
+        ListNode inputAddNumRoot2 = new ListNode();
+        ListNode cursorNode2 = inputAddNumRoot2;
+        int[] inputAddNumArr2 = new int[] {5,6,4};
+        for (int j : inputAddNumArr2) {
+            cursorNode2.next = new ListNode(j);
+            cursorNode2 = cursorNode2.next;
+        }
+
+        ListNode expectResultRoot = new ListNode();
+        ListNode cursorResult = expectResultRoot;
+        int[] resultArr = new int[]{7,0,8};
+        for (int j : resultArr) {
+            cursorResult.next = new ListNode(j);
+            cursorResult = cursorResult.next;
+        }
+
+        ListNode resultNode = Sum.addTwoNumbers(inputAddNumRoot1.next, inputAddNumRoot2.next);
+        while (expectResultRoot.next != null) {
+            Assert.assertEquals(expectResultRoot.next.val, resultNode.val);
+            expectResultRoot = expectResultRoot.next;
+            resultNode = resultNode.next;
+        }
+    }
 }
