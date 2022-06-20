@@ -32,6 +32,7 @@ public class SumTest {
 
     @Test
     public void testAddTwoNumbers() {
+        // 拼凑加数1
         ListNode inputAddNumRoot1 = new ListNode();
         ListNode cursorNode1 = inputAddNumRoot1;
         int[] inputAddNumArr1 = new int[] {2,4,3};
@@ -40,6 +41,7 @@ public class SumTest {
             cursorNode1 = cursorNode1.next;
         }
 
+        // 拼凑加数2
         ListNode inputAddNumRoot2 = new ListNode();
         ListNode cursorNode2 = inputAddNumRoot2;
         int[] inputAddNumArr2 = new int[] {5,6,4};
@@ -48,6 +50,7 @@ public class SumTest {
             cursorNode2 = cursorNode2.next;
         }
 
+        // 拼凑期望结果
         ListNode expectResultRoot = new ListNode();
         ListNode cursorResult = expectResultRoot;
         int[] resultArr = new int[]{7,0,8};
@@ -56,6 +59,7 @@ public class SumTest {
             cursorResult = cursorResult.next;
         }
 
+        // 校验返回结果
         ListNode resultNode = Sum.addTwoNumbers(inputAddNumRoot1.next, inputAddNumRoot2.next);
         while (expectResultRoot.next != null) {
             Assert.assertEquals(expectResultRoot.next.val, resultNode.val);
