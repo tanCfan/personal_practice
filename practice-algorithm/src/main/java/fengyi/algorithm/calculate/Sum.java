@@ -1,5 +1,6 @@
 package fengyi.algorithm.calculate;
 
+
 /**
  * @author fengyi
  * @version 创建时间：2022/6/17 14:14
@@ -28,5 +29,34 @@ public class Sum {
         }
 
         return null;
+    }
+
+    /**
+     * leetcode-2. 两数相加（注意ListNode表示的数字是逆序排列）
+     * @param l1 加数1
+     * @param l2 加数2
+     * @return 两数之和
+     */
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode rootNode = new ListNode();
+        ListNode cursorNode = rootNode;
+
+        // 当前位置两个数字和产生进位
+        int carry = 0;
+        while (l1 != null || l2 != null || carry != 0) {
+            int addNum1 = l1 != null ? l1.val : 0;
+            int addNum2 = l2 != null ? l2.val : 0;
+
+            int sum = addNum1 + addNum2 + carry;
+            carry = sum / 10;
+
+            cursorNode.next = new ListNode(sum % 10);
+            cursorNode = cursorNode.next;
+
+            l1 = l1 == null ? null : l1.next;
+            l2 = l2 == null ? null : l2.next;
+        }
+
+        return rootNode.next;
     }
 }
