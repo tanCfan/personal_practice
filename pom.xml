@@ -13,7 +13,8 @@
 	<modules>
 		<module>practice-pattern</module>
 		<module>practice-algorithm</module>
-	</modules>
+        <module>practice-mutithreading</module>
+    </modules>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
