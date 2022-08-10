@@ -1,4 +1,4 @@
-package threadcoreknowledge.sortthreads;
+package threadcoreknowledge.controlthreadexecute;
 
 /**
  * 使用join方式将线程排序执行
