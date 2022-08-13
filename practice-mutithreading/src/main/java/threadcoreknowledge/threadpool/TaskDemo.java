@@ -1,4 +1,4 @@
-package threadpool;
+package threadcoreknowledge.threadpool;
 
 public class TaskDemo implements Runnable {
 
