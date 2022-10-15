@@ -12,4 +12,5 @@
     <artifactId>practice-pattern</artifactId>
     <description>设计模式练习</description>
     <packaging>jar</packaging>
+
 </project>

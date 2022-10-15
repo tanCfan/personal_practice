@@ -14,6 +14,7 @@
 		<module>practice-pattern</module>
 		<module>practice-algorithm</module>
         <module>practice-mutithreading</module>
+        <module>practice-mq</module>
     </modules>
 
 	<properties>
